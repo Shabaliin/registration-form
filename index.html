@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="wrapper">
+    <form class="registration-form" method="post">
+        <div class="title">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="input-wrapper">
+            <label class="input-wrapper__label" for="email-input">Email</label>
+            <span class="input-wrapper__star">*</span>
+            <input class="input-wrapper__input" placeholder="Введите email" type="text" id="email-input">
+            <div class="input-wrapper__error-email"></div>
+        </div>
+        <div class="input-wrapper">
+            <label class="input-wrapper__label" for="password-input">Пароль</label>
+            <span class="input-wrapper__star">*</span>
+            <input class="input-wrapper__input" placeholder="Введите пароль" type="password" id="password-input">
+            <div class="input-wrapper__error-password"></div>
+        </div>
+        <div class="checkbox-wrapper">
+            <span class="checkbox-wrapper__star">*</span>
+            <input class="checkbox-wrapper__input" type="checkbox" id="checkbox-input">
+            <div class="checkbox-wrapper__mark"></div>
+            <label class="checkbox-wrapper__label" for="checkbox-input">Я согласен с <a href="https://ru1.ru">Правилами использования приложения</a></label>
+            <div class="checkbox-wrapper__error"></div>
+        </div>
+        <div class="button-wrapper">
+            <button class="registration-form__button" type="submit">Регистрация</button>
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
